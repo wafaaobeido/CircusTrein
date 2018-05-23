@@ -16,5 +16,15 @@ namespace Circustrein
         {
             InitializeComponent();
         }
+
+        private void btn_toevoegen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_verdelen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
