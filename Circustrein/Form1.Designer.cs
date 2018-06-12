@@ -39,8 +39,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_toevoegen = new System.Windows.Forms.Button();
             this.btn_verdelen = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.GB_formaat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Naam
@@ -153,15 +156,34 @@
             this.btn_verdelen.Name = "btn_verdelen";
             this.btn_verdelen.Size = new System.Drawing.Size(107, 23);
             this.btn_verdelen.TabIndex = 6;
-            this.btn_verdelen.Text = "Verdeel dieren";
+            this.btn_verdelen.Text = "Wagons Bekijken";
             this.btn_verdelen.UseVisualStyleBackColor = true;
             this.btn_verdelen.Click += new System.EventHandler(this.btn_verdelen_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(50, 210);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(338, 201);
+            this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.Visible = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(72, 211);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(316, 212);
+            this.listBox1.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 221);
+            this.ClientSize = new System.Drawing.Size(467, 415);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_verdelen);
             this.Controls.Add(this.btn_toevoegen);
             this.Controls.Add(this.label1);
@@ -174,6 +196,7 @@
             this.groupBox1.PerformLayout();
             this.GB_formaat.ResumeLayout(false);
             this.GB_formaat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,6 +215,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_toevoegen;
         private System.Windows.Forms.Button btn_verdelen;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

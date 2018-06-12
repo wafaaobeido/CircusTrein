@@ -8,17 +8,34 @@ namespace Circustrein
 {
     public class Dier
     {
-        public string naam;
+        public string Naam { get; set; }
+        public eten Eten { get; set; }
+        public formaat Formaat { get; set; }
+        public bool Check { get; set; }
+        public bool IsAllowed { get; set; }
         public enum eten { Vlees,Planten };
-        public eten eet { get; set; }
-        public enum formaat { Klein,Middelmatig,Groot };
-        public formaat dierformaat { get; set; }
+        public enum formaat { Klein ,Middelmatig ,Groot };
+        public int punten {
+            get
+            {
+                if (Formaat == Dier.formaat.Groot) return 5;
+                else if (Formaat == Dier.formaat.Klein) return 1;
+                else if (Formaat == Dier.formaat.Middelmatig) return 3;
+                return 0;
+            }
+        }
 
         public Dier()
         {
 
         }
-
-
+        
+        public Dier(string naam, eten eten, formaat formaat)
+        {
+            this.Naam = naam;
+            this.Eten = eten;
+            this.Formaat = formaat;
+        }
+        
     }
 }

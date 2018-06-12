@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Circustrein
 {
-    class Wagon
+    class DierenRegels
     {
-        public int Id { get; set; }
-        public List<Dier> dieren = new List<Dier>();
-        //public bool IsFull { get; set; }
+
     }
 }
