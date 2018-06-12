@@ -154,7 +154,7 @@
             this.btn_verdelen.Name = "btn_verdelen";
             this.btn_verdelen.Size = new System.Drawing.Size(107, 23);
             this.btn_verdelen.TabIndex = 6;
-            this.btn_verdelen.Text = "Wagons Bekijken";
+            this.btn_verdelen.Text = "Dieren verdelen";
             this.btn_verdelen.UseVisualStyleBackColor = true;
             this.btn_verdelen.Click += new System.EventHandler(this.btn_verdelen_Click);
             // 
